@@ -1,0 +1,183 @@
+import styled from 'styled-components';
+import logo from '../../assets/images/project/glogo.png';
+import main from '../../assets/images/project/main.png';
+import domain from '../../assets/images/project/domain.png'
+import scheduler from '../../assets/images/project/scheduler.png'
+import jwt from '../../assets/images/project/jwt.png'
+import jpa from '../../assets/images/project/jpa.png'
+
+const ProjectBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .project-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; 
+
+        .project-details {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+
+            img.project-logo {
+                width: 200px;
+                margin-bottom: 10px;
+            }
+
+            img.project {
+                width: 600px;
+                margin-bottom: 10px; 
+            }
+            
+            img.project-main-image {
+                width: 600px;
+                margin-bottom: 10px; 
+            }
+        }
+
+        .project-info {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-size: 24px;
+                margin-bottom: 5px; 
+            }
+
+            ul, li {
+                text-align: justify;
+                margin: 0; 
+            }
+            p {
+                font-size: 25px;
+            }
+        }
+        img.domain {
+            margin-top: 50px;
+        }
+    }
+    .project-view {
+        margin-top: 20px;
+        h2 {
+            font-size: 30px;
+            text-align: left;
+            margin-left: 30px;
+        }
+        p {
+            margin-left: 30px;
+            text-align: left;
+            font-size: 25px;
+        }
+    }
+   
+    .project-explanation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        h2 {
+            margin-top: 20px;
+            font-size: 30px;
+            text-align: left;
+            margin-left: 30px;
+            flex-basis: 100%;
+        }
+
+        p {
+            margin-top: 15px;
+            margin-left: 30px;
+            text-align: left;
+            font-size: 25px;
+            flex-basis: 100%;
+        }
+
+        .exceptions1,
+        .exceptions2 {
+            box-sizing: border-box;
+            padding-right: 20px;
+            margin-bottom: 20px;
+            flex-basis: calc(50% - 10px);
+        }
+
+        img {
+            margin-top: 15px;
+            width: 100%;
+            height: auto;
+        }
+        @media (min-width: 768px) {
+            h2,
+            p,
+            .exceptions1,
+            .exceptions2 {
+                flex-basis: calc(50% - 10px);
+            }
+            .jpa {
+                width: 700px;
+            }
+            .jwt {
+                width: 650px;
+            }
+        }
+    }
+`;
+
+const ProjectMain = () => {
+  return (
+    <ProjectBox>
+      <h1 className="subject">운동 정보 및 커뮤니티 개발(백엔트 & 프론트엔드 개발)</h1>
+      <div className="project-container">
+        <div className="project-details">
+          <img className="project-logo" src={logo} alt="프로젝트 로고" />
+          <img className="project-main-image" src={main} alt="주요 프로젝트 이미지" />
+          <img className="project" src={scheduler} alt="프로젝트 이미지" />
+        </div>
+        <div className="project-info">
+          <h2>개발 주요 사항</h2>
+          <ul>
+            <p> - Spring Boot 기반 REST 백엔드 서벗 개발</p>
+            <p> - Spring Data JPA를 통한 데이터 액세스 계층 구현</p>
+            <p> - JWT 토큰을 통한 사용자 인증 적용</p>
+          </ul>
+          <h2>⚙️ 기술 스택</h2>
+          <ul className="skils">
+            <p>- java</p>
+            <p>- html</p>
+            <p>- css</p>
+            <p>- javascript</p>
+            <p>- oracle</p>
+            <p>- spring</p>
+            <p>- springboot</p>
+            <p>- node.js</p>
+            <p>- react</p>
+          </ul>
+          <img className="domain" src={domain} alt={domain} />
+        </div>
+      </div>
+      <div className="project-view">
+        <h2>살펴보기</h2>
+        <p>'GoToGym'은 모바일과 pc에 운동 다이어리(칼로리, 운동내용)를 적거나 운동 정보를 찾을 수 있게 도와주는 다양한 기능을 제공하는 웹 서비스 입니다. 다이어리는 회원으로만 사용할 수 있어 캘린더로 정보를 확인할 수 있으며, 유튜브나 다른 사용자를 통해 정보를 제공하고 공유하고 있습니다. 또한 restful하게 구현된 Spring Boot 백엔드 서버와 React.js로 만들어진 프론트 앤드 서버가 있습니다.  </p>
+      </div>
+      <div className="project-explanation">
+        <h2>개발 관련 설명</h2>
+        <div className="exceptions1">
+        <img className="jpa" src={jpa} alt={jpa} />
+        <p>Spring Data JPA와 QueryDSL을 통한 다양한 데이터 액세스 계층 구현하였습니다.</p>
+        </div>
+        <div className="exceptions2">
+        <img className="jwt" src={jwt} alt={jwt} />
+        <p>SpringBoot 백앤드 서버의 사용자 인증 로직에서 일반적인 http 세션 기반 인증이 아닌, JJWt 라이브러리를 이용한 JWT 토큰 기반 사용자 인증을 구현하였습니다.</p>
+        </div>
+      </div>
+    </ProjectBox>
+  );
+};
+
+export default ProjectMain;

@@ -30,7 +30,7 @@ const StyledExpWrap = styled.div`
 	display: flex;
 	justify-content: space-between;
 	> div {
-		width: 50%;
+		width: 100%;
 		> ul {
 			> li {
 				position: relative;

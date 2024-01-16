@@ -14,21 +14,27 @@ function Header(props) {
 	return (
 		<StyledHeader className={`${Load ? "on" : ""}`}>
 			<ul>
-				<li className={props.page === "home" ? "active" : ""}>
+				<li className={props.page === 'home' ? 'active' : ''}>
 					<Link to="/">
 						<span>Home</span>
 						<i className="fas fa-home"></i>
 					</Link>
 				</li>
-				<li className={props.page === "about" ? "active" : ""}>
+				<li className={props.page === 'about' ? 'active' : ''}>
 					<Link to="/about">
 						<span>About</span>
 						<i className="fas fa-user"></i>
 					</Link>
 				</li>
-				<li className={props.page === "projects" ? "active" : ""}>
+				<li className={props.page === 'projects' ? 'active' : ''}>
 					<Link to="/projects">
 						<span>Projects</span>
+						<i className="fas fa-tasks"></i>
+					</Link>
+				</li>
+				<li className={props.page === 'projects2' ? 'active' : ''}>
+					<Link to="/projects2">
+						<span>Projects2</span>
 						<i className="fas fa-tasks"></i>
 					</Link>
 				</li>
@@ -51,6 +57,7 @@ const StyledHeader = styled.header`
 	bottom: 0;
 	z-index: 100;
 	opacity: 0;
+
 	&.on {
 		top: 0;
 		opacity: 1;

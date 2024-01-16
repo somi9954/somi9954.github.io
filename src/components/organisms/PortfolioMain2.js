@@ -29,16 +29,16 @@ const ProjectBox = styled.div`
             display: flex;
             flex-direction: column;
             margin-right: 20px;
-            
+
             img.project-logo {
                 width: 400px;
             }
 
             img.project {
                 width: 400px;
-                margin-bottom: 10px; 
+                margin-bottom: 10px;
             }
-            
+
             img.project-main-image {
                 width: 400px;
             }
@@ -52,12 +52,12 @@ const ProjectBox = styled.div`
 
             h2 {
                 font-size: 24px;
-                margin-bottom: 5px; 
+                margin-bottom: 5px;
             }
 
             ul, li {
                 text-align: justify;
-                margin: 0; 
+                margin: 0;
             }
             p {
                 font-size: 25px;
@@ -81,7 +81,7 @@ const ProjectBox = styled.div`
             font-size: 25px;
         }
     }
-   
+
     .project-explanation {
         display: flex;
         flex-wrap: wrap;
@@ -133,7 +133,7 @@ const ProjectBox = styled.div`
     }
 `;
 
-const ProjectMain = () => {
+const ProjectMain2 = () => {
   return (
     <ProjectBox>
 
@@ -176,16 +176,16 @@ const ProjectMain = () => {
       <div className="project-explanation">
         <h2>개발 관련 설명</h2>
         <div className="exceptions1">
-        <img className="jpa" src={jpa} alt={jpa} />
-        <p>Spring Data JPA와 QueryDSL을 통한 다양한 데이터 액세스 계층 구현하였습니다.</p>
+          <img className="jpa" src={jpa} alt={jpa} />
+          <p>Spring Data JPA와 QueryDSL을 통한 다양한 데이터 액세스 계층 구현하였습니다.</p>
         </div>
         <div className="exceptions2">
-        <img className="jwt" src={jwt} alt={jwt} />
-        <p>SpringBoot 백앤드 서버의 사용자 인증 로직에서 일반적인 http 세션 기반 인증이 아닌, JJWt 라이브러리를 이용한 JWT 토큰 기반 사용자 인증을 구현하였습니다.</p>
+          <img className="jwt" src={jwt} alt={jwt} />
+          <p>SpringBoot 백앤드 서버의 사용자 인증 로직에서 일반적인 http 세션 기반 인증이 아닌, JJWt 라이브러리를 이용한 JWT 토큰 기반 사용자 인증을 구현하였습니다.</p>
         </div>
       </div>
     </ProjectBox>
   );
 };
 
-export default ProjectMain;
+export default ProjectMain2;

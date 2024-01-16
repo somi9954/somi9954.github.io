@@ -18,7 +18,7 @@ function AboutTxtWrap() {
 						<span className="message">
 							<strong>SOMI CHO</strong>
 							<strong>WEB DEVELOPER</strong>
-							<strong>BackEnd DEVELOPER</strong>
+							<strong>BACKEND DEVELOPER</strong>
 						</span>
 					</Heading>
 					{/* <p>I’m a Tunisian based web designer & front‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.</p> */}

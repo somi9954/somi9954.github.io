@@ -27,13 +27,23 @@ function DetailWrap(props) {
 							{props.project.period}
 						</li>
 						<li>
+							<i className="far fa-calendar-alt"></i>
+							{props.project.period}
+						</li>
+						<li>
 							<i className="far fa-building"></i>
 							{props.project.project}
 						</li>
 					</ul>
 					<Heading level="2">{props.project.name} PROJECT</Heading>
 					<ul className="tech">
-						{props.project.tech.map((list, idx) => (
+					{props.project.tech.map((list, idx) => (
+							<li key={idx}>{list}</li>
+						))}
+					</ul>
+					<Heading level="2">{props.project.name} PROJECT2</Heading>
+					<ul className="tech2">
+						{props.project.tech2.map((list, idx) => (
 							<li key={idx}>{list}</li>
 						))}
 					</ul>
@@ -43,12 +53,6 @@ function DetailWrap(props) {
 					<div>
 						<p>{props.project.description}</p>
 						<div className="link">
-							{props.project.link && (
-								<a href={props.project.link} target="_blank" rel="noopener noreferrer">
-									<i className="far fa-file-alt"></i>
-									Project : <span>Link</span>
-								</a>
-							)}
 							{props.project.github && (
 								<a href={props.project.github} target="_blank" rel="noopener noreferrer">
 									<i className="fab fa-github"></i>
@@ -131,7 +135,6 @@ const StyledDetail = styled.div`
 			li {
 				margin: 20px 0 10px;
 				padding-bottom: 20px;
-				/* border-bottom: 1px solid #424242; */
 				h3 {
 					margin-bottom: 5px;
 					font-size: 20px;

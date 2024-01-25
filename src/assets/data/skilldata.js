@@ -2,8 +2,14 @@
 const skillData = {
 	educationList: [
 		{
-			period: "2023.05 - 2023.11",
-			position: "웹 개발, 자바(JAVA)기반 스프링 응용SW개발자 양성과정B",
+			period: "2023.08 - 2023.11",
+			position: "자바(JAVA)기반 스프링 응용SW개발자 양성과정B",
+			company: "코리아IT아카데미 인천",
+			explain: "Oracle을 이용하여 데이터 처리와 분석 능력을 배웠으며 스프링과 스프링 부트를 이용하여 백엔드 서버를 구축하였습니다. ",
+		},
+		{
+			period: "2023.05 - 2023.10",
+			position: "웹 개발",
 			company: "코리아IT아카데미 인천",
 			explain: "Oracle을 이용하여 데이터 처리와 분석 능력을 배웠으며 스프링과 스프링 부트를 이용하여 백엔드 서버를 구축하였습니다. ",
 		},

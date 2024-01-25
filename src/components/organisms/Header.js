@@ -38,6 +38,12 @@ function Header(props) {
 						<i className="fas fa-tasks"></i>
 					</Link>
 				</li>
+				<li className={props.page === 'projects3' ? 'active' : ''}>
+					<Link to="/projects3">
+						<span>Projects3</span>
+						<i className="fas fa-tasks"></i>
+					</Link>
+				</li>
 				<li>
 					{/* eslint-disable-next-line react/jsx-no-target-blank */}
 					<a href="https://github.com/somi9954" target="_blank">

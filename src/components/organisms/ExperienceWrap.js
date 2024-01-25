@@ -66,12 +66,14 @@ const StyledExpWrap = styled.div`
 					font-weight: 600;
 					letter-spacing: 0.6px;
 					opacity: 0.8;
+					float: left;
 				}
 				> h4 {
 					margin: 7px 0 10px;
 					font-size: 18px;
 					font-weight: 500;
 					opacity: 0.8;
+					display: flex;
 					span {
 						position: relative;
 						padding-left: 26px;
@@ -92,6 +94,7 @@ const StyledExpWrap = styled.div`
 				}
 				> p {
 					font-size: 14px;
+					display: flex;
 				}
 			}
 		}

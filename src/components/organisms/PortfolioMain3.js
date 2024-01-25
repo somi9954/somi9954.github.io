@@ -15,7 +15,6 @@ import node_js from '../../assets/images/logo/node.js.png'
 import react from '../../assets/images/logo/react.png'
 import gradle from '../../assets/images/logo/gradle.png'
 import git from '../../assets/images/logo/git.png'
-import { Link } from 'react-router-dom';
 
 
 
@@ -105,17 +104,6 @@ const ProjectBox = styled.div`
         width: 165px;
         margin: 6px;
     }
-    .more-btn {
-        padding: 2px 40px;
-        border-radius: 26px;
-        background-color: ${(props) => props.theme.mainColor};
-        font-size: 15px;
-        font-weight: 500;
-        color: #fff;
-        line-height: 46px;
-        letter-spacing: 0.5px;
-    }
-
     .project-explanation {
         display: flex;
         flex-wrap: wrap;
@@ -129,7 +117,7 @@ const ProjectBox = styled.div`
             margin-left: 15px;
             flex-basis: 100%;
         }
-        
+
         p {
             margin-top: 15px;
             text-align: left;
@@ -224,9 +212,6 @@ const ProjectMain = () => {
         <p>SpringBoot 백앤드 서버의 사용자 인증 로직에서 일반적인 http 세션 기반 인증이 아닌, JJWT 라이브러리를 이용한 JWT 토큰 기반 사용자 인증을 구현하였습니다.</p>
         </div>
       </div>
-      <Link to="/projects2" className="more-btn">
-        MORE PROJECT 2
-      </Link>
     </ProjectBox>
   );
 };

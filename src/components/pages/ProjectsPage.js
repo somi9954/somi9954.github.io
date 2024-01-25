@@ -10,7 +10,7 @@ export class ProjectsPage extends Component {
 			<PageWrap page="projects">
 				<main>
 					<PageHeader titleBg="Works">
-						My <span className="point">Projects</span>
+						My <span className="point">Projects 1</span>
 					</PageHeader>
 					<section>
 						<PortfolioMain />

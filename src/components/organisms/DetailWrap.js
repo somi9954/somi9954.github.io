@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Heading from "../atoms/Heading";
 
 function DetailWrap(props) {
-	// console.log(props.project);
 
 	const imgList = props.project.image.map((img, idx) => (
 		<li key={idx}>
@@ -44,6 +43,12 @@ function DetailWrap(props) {
 					<Heading level="2">{props.project.name} PROJECT2</Heading>
 					<ul className="tech2">
 						{props.project.tech2.map((list, idx) => (
+							<li key={idx}>{list}</li>
+						))}
+					</ul>
+					<Heading level="2">{props.project.name} PROJECT3</Heading>
+					<ul className="tech3">
+						{props.project.tech3.map((list, idx) => (
 							<li key={idx}>{list}</li>
 						))}
 					</ul>

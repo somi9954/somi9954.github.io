@@ -170,7 +170,6 @@ const ProjectBox = styled.div`
 const ProjectMain = () => {
   return (
     <ProjectBox>
-
       <div className="project-container">
         <div className="project-details">
           <img className="project-logo" src={logo} alt="프로젝트 로고" />
@@ -217,7 +216,7 @@ const ProjectMain = () => {
         <h2>개발 관련 설명</h2>
         <div className="exceptions1">
         <img className="jpa" src={jpa} alt={jpa} />
-        <p>Spring Data JPA와 QueryDSL을 통한 다양한 데이터 액세스 계층 구현하였습니다.</p>
+        <p>Spring Data JPA의 JPQL 객체 지향 쿼리를 통해 데이터베이스 내의 테이블을 조회하여 엔티티를 매핑하고 QueryDSL을 통해 동적인 쿼리를 구현하여 다양한 데이터 액세스 계층을 구현하였습니다.</p>
         </div>
         <div className="exceptions2">
         <img className="jwt" src={jwt} alt={jwt} />

@@ -180,7 +180,6 @@ const ProjectBox = styled.div`
 const ProjectMain = () => {
   return (
     <ProjectBox>
-
       <div className="project-container">
         <div className="project-details">
           <img className="project-logo" src={logo} alt="프로젝트 로고" />
@@ -231,7 +230,7 @@ const ProjectMain = () => {
         </div>
         <div className="exceptions2">
           <img className="jwt" src={jwt} alt={jwt} />
-          <p>SpringBoot 백앤드 서버의 사용자 인증 로직에서 일반적인 http 세션 기반 인증이 아닌, JJWT 라이브러리를 이용한 JWT 토큰 기반 사용자 인증을 구현하였습니다.</p>
+          <p>SpringBoot 백앤드 서버의 SpringSecurity의 FilterChain을 통해 SecurityConfig JWTfilter를 사용하여 Httpsession이 아닌 JJWT 라이브러리를 이용한 JWT 토큰 기반을 사용하여 사용자 인증을 구현하였습니다. </p>
         </div>
       </div>
       <Link to="/projects3" className="more-btn">

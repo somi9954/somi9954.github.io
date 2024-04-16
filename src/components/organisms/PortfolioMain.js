@@ -177,7 +177,7 @@ const ProjectMain = () => {
           <img className="project" src={scheduler} alt="프로젝트 이미지" />
         </div>
         <div className="project-info">
-          <h1 className="subject">운동 정보 및 커뮤니티 개발(백엔트 & 프론트엔드 개발)</h1>
+          <h1 className="subject">운동 정보 및 커뮤니티 개발(백엔드 & 프론트엔드 개발)</h1>
           <h2>개발 주요 사항</h2>
           <ul>
             <p> - Spring Boot 기반 REST 백엔드 서버 개발</p>

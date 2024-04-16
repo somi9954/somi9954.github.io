@@ -60,7 +60,7 @@ const StyledSkills = styled.main`
 		}
 
 		> h2 {
-			margin-bottom: 40px;
+			margin-bottom: 50px;
 			font-size: 26px;
 			font-weight: 600;
 			text-align: center;

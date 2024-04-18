@@ -61,7 +61,6 @@ const StyledExpWrap = styled.div`
 					padding: 1px 10px;
 					margin-bottom: 12px;
 					border-radius: 20px;
-					background-color: #252525;
 					font-size: 12px;
 					font-weight: 600;
 					letter-spacing: 0.6px;
@@ -70,7 +69,7 @@ const StyledExpWrap = styled.div`
 				}
 				> h4 {
 					margin: 7px 0 10px;
-					font-size: 18px;
+					font-size: 15px;
 					font-weight: 500;
 					opacity: 0.8;
 					display: flex;

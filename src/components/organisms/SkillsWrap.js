@@ -15,11 +15,11 @@ import javascript from '../../assets/images/logo/javascript.png'
 const SkillBox = styled.div`
     text-align: center;
     .skills {
-    maring-botton: 15px;
+    margin-bottom: 15px;
     }
     
     img {
-        width: 130px;
+        width: 100px;
         margin: 20px;
     
     }
@@ -34,13 +34,11 @@ const SkillsWrap = () => {
             <img src={html} alt={html} />
             <img src={mysql} alt={mysql} />
             <img src={oracle} alt={oracle} />
-            <br />
             <img src={javascript} alt={javascript} />
             <img src={node} alt={node} />
             <img src={react} alt={react} />
             <img src={spring} alt={spring} />
             <img src={spring_boot} alt={spring_boot}/>
-            <br />
             <img src={git} alt={git} />
             <img src={github} alt={github} />
           </div>

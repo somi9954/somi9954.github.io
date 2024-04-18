@@ -15,33 +15,32 @@ export class aboutPage extends Component {
 					<PageHeader titleBg="Skills">
 						About <span className="point">Me</span>
 					</PageHeader>
-
-					<section>
-						<Heading level="2">SKILLS</Heading>
-						<SkillsWrap />
-					</section>
-
-					<section>
-						<Heading level="2">EDUCATION</Heading>
-						<ExperienceWrap />
-						<Link to="/projects" className="more-btn">
-							MORE PROJECT
-						</Link>
-					</section>
+					<SectionContainer>
+						<section>
+							<Heading level="2">Skill</Heading>
+							<SkillsWrap />
+						</section>
+						<section>
+							<Heading level="2">Education</Heading>
+							<ExperienceWrap />
+							<Link to="/projects" className="more-btn">
+								MORE PROJECT
+							</Link>
+						</section>
+					</SectionContainer>
 				</StyledSkills>
 			</PageWrap>
 		);
 	}
 }
 
+
 const StyledSkills = styled.main`
 	section {
 		max-width: 1140px;
-		margin: auto;
-		padding-bottom: 80px;
 		text-align: center;
 		.more-btn {
-			display: inline-block; /* 버튼을 블록 요소로 만들지 않고 inline-block으로 설정 */
+			display: inline-block;
 		}
 		&:not(:last-child) {
 			margin-bottom: 60px;
@@ -55,7 +54,6 @@ const StyledSkills = styled.main`
 				margin: auto;
 				width: 500px;
 				height: 1px;
-				background-color: #252525;
 			}
 		}
 
@@ -67,12 +65,10 @@ const StyledSkills = styled.main`
 		}
 	}
 	
-
-
-	// EDUCATION 섹션에 대한 스타일 조정
+	
 	section:last-child {
 		&:not(:last-child)::after {
-			display: none; // 마지막 섹션 이후의 수평 선 숨기기
+			display: none;
 		}
 	}
 	.more-btn {
@@ -97,6 +93,39 @@ const StyledSkills = styled.main`
 					width: 70%;
 				}
 			}
+		}
+	}
+`;
+
+const SectionContainer = styled.div`
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap; 
+
+	section {
+		width: calc(50% - 20px); 
+		margin-bottom: 60px;
+		position: relative; 
+	}
+
+	section::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 500px;
+		height: 1px;
+	}
+
+	section:last-child::after {
+		display: none;
+	}
+
+	@media ${(props) => props.theme.mobile} {
+		section {
+			width: 100%; 
 		}
 	}
 `;

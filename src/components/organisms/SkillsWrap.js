@@ -6,7 +6,6 @@ import git from '../../assets/images/logo/git.png'
 import github from '../../assets/images/logo/github.png'
 import mysql from '../../assets/images/logo/mysql.png'
 import oracle from '../../assets/images/logo/oracle.png'
-import node from '../../assets/images/logo/node.js.png'
 import react from '../../assets/images/logo/react.png'
 import spring from '../../assets/images/logo/spring.png'
 import spring_boot from '../../assets/images/logo/spring_boot.png'
@@ -35,7 +34,6 @@ const SkillsWrap = () => {
             <img src={mysql} alt={mysql} />
             <img src={oracle} alt={oracle} />
             <img src={javascript} alt={javascript} />
-            <img src={node} alt={node} />
             <img src={react} alt={react} />
             <img src={spring} alt={spring} />
             <img src={spring_boot} alt={spring_boot}/>

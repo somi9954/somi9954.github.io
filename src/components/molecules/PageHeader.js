@@ -23,7 +23,7 @@ function PageHeader(props) {
 
 const StyledPageHeader = styled.div`
 	position: relative;
-	padding: 80px 0px 80px 0px;
+	padding: 20px 0px 20px 0px;
 	text-align: center;
 	h1 {
 		font-size: 56px;

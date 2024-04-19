@@ -72,7 +72,8 @@ const StyledSkills = styled.main`
 		}
 	}
 	.more-btn {
-		padding: 3px 40px;
+		float: left;
+		padding: 0px 40px;
 		border-radius: 26px;
 		background-color: ${(props) => props.theme.mainColor};
 		font-size: 15px;

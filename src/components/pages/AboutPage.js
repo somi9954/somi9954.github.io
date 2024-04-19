@@ -41,6 +41,7 @@ const StyledSkills = styled.main`
 		text-align: center;
 		.more-btn {
 			display: inline-block;
+			margin-top: 30px;
 		}
 		&:not(:last-child) {
 			margin-bottom: 60px;
@@ -73,7 +74,7 @@ const StyledSkills = styled.main`
 	}
 	.more-btn {
 		float: left;
-		padding: 0px 40px;
+		padding: 0 40px;
 		border-radius: 26px;
 		background-color: ${(props) => props.theme.mainColor};
 		font-size: 15px;

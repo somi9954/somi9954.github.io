@@ -18,7 +18,7 @@ const SkillBox = styled.div`
     }
     
     img {
-        width: 100px;
+        width: 120px;
         margin: 20px;
     
     }

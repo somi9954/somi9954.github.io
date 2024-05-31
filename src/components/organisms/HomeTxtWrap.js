@@ -21,7 +21,6 @@ function AboutTxtWrap() {
 							<strong>BACKEND DEVELOPER</strong>
 						</span>
 					</Heading>
-					{/* <p>I’m a Tunisian based web designer & front‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.</p> */}
 					<p>
 						안녕하세요, 저는 조소미입니다. 😀
 						<br />
@@ -46,21 +45,27 @@ function AboutTxtWrap() {
 						<li>
 							<span>Email : </span>jolh999@naver.com
 						</li>
-						{/* <li>
-							<span>Name : </span>Steve
-						</li>
-						<li>
-							<span>Name : </span>Steve
-						</li> */}
 					</ul>
 				</section>
 				<Link to="/about" className="more-btn">
-					MORE ABOUT ME
+					MORE ABOUT ME <span className="arrow_right"></span>
 				</Link>
 			</div>
 		</StyledHome>
 	);
 }
+const horizontal = keyframes`
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(10px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+`;
+
 
 const messageslide = keyframes`
 	0% {
@@ -290,6 +295,22 @@ const StyledHome = styled.main`
 			line-height: 46px;
 			letter-spacing: 0.5px;
 		}
+
+		.arrow_right {
+			align-content: center;
+			position: absolute;
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border-top: 7px solid transparent;
+			border-right: 7px solid transparent;
+			border-bottom: 7px solid transparent;
+			border-left: 7px solid white;
+			margin-top: 15px;
+			margin-left: 7px;
+			animation: ${horizontal} 0.7s ease-in-out infinite;
+		}
+
 	}
 	@media ${(props) => props.theme.laptop} {
 		.left {

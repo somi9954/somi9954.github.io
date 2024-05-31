@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from 'styled-components';
 import Heading from "../atoms/Heading";
 import PageHeader from "../molecules/PageHeader";
 import ExperienceWrap from "../organisms/ExperienceWrap";
@@ -24,7 +24,7 @@ export class aboutPage extends Component {
 							<Heading level="2">Education</Heading>
 							<ExperienceWrap />
 							<Link to="/projects" className="more-btn">
-								MORE PROJECT
+								MORE PROJECT <span className="arrow_right"></span>
 							</Link>
 						</section>
 					</SectionContainer>
@@ -33,6 +33,17 @@ export class aboutPage extends Component {
 		);
 	}
 }
+const horizontal = keyframes`
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(10px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+`;
 
 
 const StyledSkills = styled.main`
@@ -64,6 +75,20 @@ const StyledSkills = styled.main`
 			font-weight: 600;
 			text-align: center;
 		}
+	}
+	.arrow_right {
+		align-content: center;
+		position: absolute;
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-top: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-bottom: 7px solid transparent;
+		border-left: 7px solid white;
+		margin-top: 15px;
+		margin-left: 7px;
+		animation: ${horizontal} 0.7s ease-in-out infinite;
 	}
 	
 	

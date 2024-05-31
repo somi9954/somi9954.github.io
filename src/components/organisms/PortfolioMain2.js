@@ -99,7 +99,8 @@ const ProjectMain = () => {
         <p><FaCheck /> FrontEnd</p> React.js, javascript, html, css
         <p><FaCheck /> BackEnd</p> Spring_Boot, Spring, JAVA, gradle
         <p><FaCheck /> Database</p> ORACLE
-        <br /><br /><br />
+        <p><FaCheck />  Deployment</p> intellij
+        <br />
         <Link to="/projects3" className="more-btn">
           MORE PROJECT <span className="arrow_right"></span>
         </Link>
